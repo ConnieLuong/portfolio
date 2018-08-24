@@ -2,19 +2,51 @@
 <html>
 <head>
 <title>Connie Luong</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/myjs.js"></script>
 </head>
 
 <body>
+<!--Banner and Navbar-->
 <header>
-<h1>Hello World!<br>I'm Connie.<br></h1>
-<h3><em>I do web development. _</em></h3>
+<div class="jumbotron text-center">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about_start">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="banner-wrap">
+   <h1 id="banner-left-1">Hello World!<br>I'm Connie.</h1>
+   <h3 id="banner-left-2">I do web development. _</h3>
+</div>
+</div>
 </header>
 
 
-<div class="about">
+<!--Main Content-->
+<div class="content-wrapper">
+<div class="about" id="about_start">
 <h2>About Me</h2>
-
+<!--ABOUT-->
 <div id="about_content">
 &gt;&gt; Connie.origin<br>
 &quot;San Gabriel Valley, CA&quot;<br>
@@ -40,17 +72,16 @@ flip&quot;, &quot;snooze&quot;]<br>
 &quot;luong.connie.s@gmail.com&quot;<br>
 </div>
 </div>
-
+<!--RESUME-->
 <div id="resume">
 <h2>Resume</h2>
-<!--Perhaps make a table for resume-->
 <table style="width:100%">
 <tr>
-   <th></th>
-   <th>Education</th>
+   <th class="first-col"></th>
+   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left">Education</th>
 <tr>
 <tr>
-   <th>June 2020</th>
+   <th valign="top" class="first-col">June 2020</th>
    <td><span class="resume_topics">University Of California San Diego</span>
       <ul style="list-style-type:none">
          <li>B.S. Computer Science</li>
@@ -60,7 +91,7 @@ flip&quot;, &quot;snooze&quot;]<br>
    </td>
 </tr>
 <tr>
-   <th></th>
+   <th class="first-col"></th>
    <td><span class="resume_topics">Relevant Coursework</span>
       <ul>
          <li>Java Programming</li>
@@ -74,11 +105,11 @@ flip&quot;, &quot;snooze&quot;]<br>
    </td>
 </tr>
 <tr>
-   <th></th>
-   <th>Skills</th>
+   <th class="first-col"></th>
+   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left;">Skills</th>
 </tr>
 <tr>
-   <td></td>
+   <td class="first-col"></td>
    <td><span class="resume_topics">Recent</span>
       <ul>
          <li>HTML/CSS</li>
@@ -88,7 +119,7 @@ flip&quot;, &quot;snooze&quot;]<br>
    <td>
 <tr>
 <tr>
-   <td></td>
+   <td class="first-col"></td>
    <td><span class="resume_topics">Less Recent</span>
       <ul>
          <li>Java</li>
@@ -98,7 +129,7 @@ flip&quot;, &quot;snooze&quot;]<br>
    </td>
 </tr>
 <tr>
-   <td></td>
+   <td class="first-col"></td>
    <td><span class="resume_topics">Languages</span>
       <ul>
          <li>English</li>
@@ -118,7 +149,7 @@ flip&quot;, &quot;snooze&quot;]<br>
 <span>&copy; 2018 Connie Luong</span>
 <span style="float:right;"><a href=#>Email</a> / <a href=#>LinkedIn</a> / <a href=#>Github</a></span>
 </footer>
-
+</div>
 </body>
 </html>
 

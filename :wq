@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connie Luong</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<header>
+
+<div class="banner">
+<div class="banner_wrap">
+   <img class="banner-img" src="img/banner.jpg">
+   <div class="navbar">
+      <a href="#about_start">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+   </div>
+   <h1 id="banner-left-1">Hello World!<br>I'm Connie.</h1>
+   <h3 id="banner-left-2">I do web development. _</h3>
+</div>
+</div>
+</header>
+
+
+<div class="about" id="about_start">
+<h2>About Me</h2>
+
+<div id="about_content">
+&gt;&gt; Connie.origin<br>
+&quot;San Gabriel Valley, CA&quot;<br>
+<br>
+&gt;&gt; Connie.education<br>
+&quot;University of California San Diego&quot;<br>
+<br>
+&gt;&gt; Connie.major<br>
+&quot;Computer Science&quot;<br>
+<br>
+&gt;&gt; Connie.expectedGraduation<br>
+&quot;June 2020&quot;<br>
+<br>
+&gt;&gt; Connie.freeTime<br>
+[&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
+with dog&quot;, &quot;tea&quot;]<br>
+<br>
+&gt;&gt; Connie.random<br>
+[&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
+flip&quot;, &quot;snooze&quot;]<br>
+<br>
+&gt;&gt; Connie.email<br>
+&quot;luong.connie.s@gmail.com&quot;<br>
+</div>
+</div>
+
+<div id="resume">
+<h2>Resume</h2>
+<!--Perhaps make a table for resume-->
+<table style="width:100%">
+<tr>
+   <th></th>
+   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left">Education</th>
+<tr>
+<tr>
+   <th valign="top">June 2020</th>
+   <td><span class="resume_topics">University Of California San Diego</span>
+      <ul style="list-style-type:none">
+         <li>B.S. Computer Science</li>
+         <li>Provost's Honors</li>
+         <li>GPA 3.713</li>
+      </ul>
+   </td>
+</tr>
+<tr>
+   <th></th>
+   <td><span class="resume_topics">Relevant Coursework</span>
+      <ul>
+         <li>Java Programming</li>
+         <li>Data Structures</li>
+         <li>Terminal, Shell Scriptping</li>
+         <li>Discrete Math</li>
+         <li>Web and Multimedia Design</li>
+         <li>Software Engineering</li>
+         <li>Interaction Design</li>
+      </ul>
+   </td>
+</tr>
+<tr>
+   <th></th>
+   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left;">Skills</th>
+</tr>
+<tr>
+   <td></td>
+   <td><span class="resume_topics">Recent</span>
+      <ul>
+         <li>HTML/CSS</li>
+         <li>Javascript</li>
+         <li>C</li>
+      <ul>
+   <td>
+<tr>
+<tr>
+   <td></td>
+   <td><span class="resume_topics">Less Recent</span>
+      <ul>
+         <li>Java</li>
+         <li>Python</li>
+         <li>Shell Scripting</li>
+      </ul>
+   </td>
+</tr>
+<tr>
+   <td></td>
+   <td><span class="resume_topics">Languages</span>
+      <ul>
+         <li>English</li>
+         <li>Cantonese</li>
+         <li>Mandarin Chinese</li>
+      </ul>
+   </td>
+</tr>
+</table>
+</div>
+
+<div id="projects">
+<h2>Projects</h2>
+</div>
+
+<footer>
+<span>&copy; 2018 Connie Luong</span>
+<span style="float:right;"><a href=#>Email</a> / <a href=#>LinkedIn</a> / <a href=#>Github</a></span>
+</footer>
+
+</body>
+</html>
+

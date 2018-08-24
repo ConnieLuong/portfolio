@@ -1,0 +1,153 @@
+body {
+   background-color: black;
+   font-size: 13px;
+   margin: 0;
+}
+
+.content-wrapper{
+   padding-left:5%;
+   padding-right:5%;
+}
+
+
+/*Banner + Navigation Bar*/
+#banner {
+
+   position: relative;
+   width: 100%;
+   text-align: left;
+}
+
+.jumbotron h1{ color: white;}
+.jumbotron{ 
+   background-color:black;
+   background-image: url('../img/background-2.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 0;
+}
+
+#banner-wrap{
+   padding-top: 16%;
+   padding-bottom: 16%;
+   padding-left: 5%;
+}
+
+.navbar-default{
+   background-color: transparent;
+   border: none;
+}
+
+.navbar-default .navbar-nav > li > a{
+   color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+   color: white;
+   text-decoration: underline;
+}
+
+.navbar-fixed-top.scrolled {
+   transition: background-color 500ms linear;
+}
+
+@media (max-width: 768px){
+   .navbar-collapse {
+      background: rgb(255,255,255,0.8);
+   }
+   .navbar-default .navbar-nav > li > a{
+      color: MidnightBlue;
+   }
+   .navbar-default .navbar-nav > li > a:hover{
+      color: MidnightBlue;
+      text-decoration: underline;
+   }
+}
+
+/* Content, Headings */
+h1, h2 {
+   font-family: 'PT Sans';
+   color: #ffffff;
+   text-align: left;
+}
+
+h1 {
+   font-size: 60px;
+   margin-bottom: -10px;
+   vertical-align: middle;
+   padding-bottom: 0px;
+}
+
+h3 {
+   font-family: 'Open Sans';
+   font-style: italic;
+   color: #fff;
+   font-size:20px;
+   font-weight: normal;
+   text-align: left;
+}
+#about_content {
+   color: #fff;
+   font-family: "Courier New";
+}
+
+/*About Me*/
+#about_me{
+   padding-top:50px;
+}
+
+/* Table */
+#resume{
+   padding-top:50px;
+}
+
+table {
+   font-family: 'Open Sans';
+   color: #fff;
+}
+th {
+   font-family:'PT Sans';
+   font-weight: normal;
+   font-size: 18px;
+   padding-top:18px;
+}
+td {
+   padding-top:18px;
+   padding-bottom:18px;
+}
+.first-col {
+   text-align: center;
+   //white-space: nowrap;
+   width: 16%;
+   padding-right:10px;
+   padding-left: 20px;
+}
+
+
+/*Projects*/
+#projects{
+   padding-top: 50px;
+}
+
+
+/* Footer */
+footer{
+   font-family: 'Open Sans';
+   color: #fff;
+   padding: 30px;
+   padding-top: 50px;
+}
+footer a{
+   color: #fff;
+   text-decoration: none;
+}
+
+footer a:hover{
+   text-decoration: underline;
+   color: #fff;
+}
+
+footer a:visited{
+   color:#fff;
+   text-decoration: none;
+}
