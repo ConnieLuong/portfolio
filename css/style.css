@@ -9,6 +9,15 @@ body {
    padding-right:5%;
 }
 
+/*Banner particle animation*/
+.header__background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 
 /*Banner + Navigation Bar*/
 #banner {

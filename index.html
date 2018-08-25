@@ -8,13 +8,16 @@
 <meta name="viewport" content="width-device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 <script src="js/myjs.js"></script>
 </head>
 
 <body>
 <!--Banner and Navbar-->
 <header>
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" style="max-height:80%">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -34,11 +37,32 @@
   </div>
 </nav>
 
+<canvas class="header__background" width="1676" height "1472" style="width:100%;
+height:100%;"></canvas>
 <div id="banner-wrap">
-   <h1 id="banner-left-1">Hello World!<br>I'm Connie.</h1>
-   <h3 id="banner-left-2">I do web development. _</h3>
+   <h1 style="z-index:1; position:relative;">Hello World!<br>I'm Connie.</h1>
+   <div class="typed_wrap" style="z-index:1; position:relative">
+      <h3>I do <span id="typed"></span></h3>
+   </div>
 </div>
-</div>
+<script>
+$('document').ready(function(){
+   var typed = new Typed('#typed',{
+      strings:["Website Development.", "Interaction Design.",
+      "UI Design.", "Front End Web Development."],
+      typeSpeed:30,
+      startDelay: 2000,
+      backSpeed: 50,
+      backDelay: 2000,
+      loop: true,
+      loopCount: Infinity,
+      shuffle: true,
+      fadeOut: true,
+      cursorChar:"_",
+   });
+});
+</script>
+
 </header>
 
 
@@ -150,6 +174,43 @@ flip&quot;, &quot;snooze&quot;]<br>
 <span style="float:right;"><a href=#>Email</a> / <a href=#>LinkedIn</a> / <a href=#>Github</a></span>
 </footer>
 </div>
+
+<!--Particles Animation-->
+<canvas class="background"></canvas>
+<script src="https://npmcdn.com/particlesjs@2.2.2/dist/particles.min.js"></script>
+<script>
+      window.onload = function() {
+        Particles.init({
+          selector: '.header__background',
+          color: '#75A5B7',
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80,
+                color: '#75A5B7',
+                connectParticles: true
+              }
+            }, {
+              breakpoint: 425,
+              options: {
+                maxParticles: 50,
+                coloe: '#75A5B7',
+                connectParticles: true
+              }
+            }, {
+               breakpoint: 320,
+               options:{
+                  maxParticles: 0
+               }
+            }
+          ]
+        });
+      };
+
+</script>
 </body>
 </html>
 
