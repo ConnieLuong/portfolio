@@ -9,6 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 <script src="js/myjs.js"></script>
@@ -72,13 +73,19 @@ $('document').ready(function(){
 
 <!--Animated Background Canvas-->
 <canvas class="header__background" style="width:100%; height:100%"></canvas>
+
+<!-- scroll animation icon
+<div class="scroll-wrapper">
+<span class="mouse"></span>
+<p id="scroll-text">Scroll<p>
+</div>-->
+
 </header>
 
 
 <!--Main Content-->
-<div class="content-wrapper" style="z-index:4; position: relative;
-background:black">
-<div class="about" id="about_start">
+<div class="content-wrapper" style="z-index:4; position: relative;">
+<div class="content-element" id="about_start">
 <h2>About Me</h2>
 <!--ABOUT-->
 <div id="about_content">
@@ -107,25 +114,21 @@ flip&quot;, &quot;snooze&quot;]<br>
 </div>
 </div>
 <!--RESUME-->
-<div id="resume">
+<div class="content-element" id="resume">
 <h2>Resume</h2>
-<table style="width:100%">
+<table style="width:80%" align=center>
 <tr>
-   <th class="first-col"></th>
    <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left">Education</th>
 <tr>
 <tr>
-   <th valign="top" class="first-col">June 2020</th>
    <td><span class="resume_topics">University Of California San Diego</span>
-      <ul style="list-style-type:none">
-         <li>B.S. Computer Science</li>
-         <li>Provost's Honors</li>
-         <li>GPA 3.713</li>
-      </ul>
+   <br>June 2020
+   <br>B.S. Computer Science
+   <br>Provost's Honors
+   <br>GPA 3.713
    </td>
 </tr>
 <tr>
-   <th class="first-col"></th>
    <td><span class="resume_topics">Relevant Coursework</span>
       <ul>
          <li>Java Programming</li>
@@ -139,11 +142,9 @@ flip&quot;, &quot;snooze&quot;]<br>
    </td>
 </tr>
 <tr>
-   <th class="first-col"></th>
    <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left;">Skills</th>
 </tr>
 <tr>
-   <td class="first-col"></td>
    <td><span class="resume_topics">Recent</span>
       <ul>
          <li>HTML/CSS</li>
@@ -153,7 +154,6 @@ flip&quot;, &quot;snooze&quot;]<br>
    <td>
 <tr>
 <tr>
-   <td class="first-col"></td>
    <td><span class="resume_topics">Less Recent</span>
       <ul>
          <li>Java</li>
@@ -163,7 +163,6 @@ flip&quot;, &quot;snooze&quot;]<br>
    </td>
 </tr>
 <tr>
-   <td class="first-col"></td>
    <td><span class="resume_topics">Languages</span>
       <ul>
          <li>English</li>
@@ -175,7 +174,7 @@ flip&quot;, &quot;snooze&quot;]<br>
 </table>
 </div>
 
-<div id="projects">
+<div class="content-element" id="projects">
 <h2>Projects</h2>
 </div>
 
@@ -209,7 +208,6 @@ flip&quot;, &quot;snooze&quot;]<br>
           ]
         });
       };
-
 </script>
 </body>
 </html>
