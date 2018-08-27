@@ -1,3 +1,48 @@
+/* Pictures */
+.col-sm-4{
+   padding:0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.image {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #545193;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 /*HEADER*/
 .header .header__background {
   position: absolute;
@@ -31,7 +76,7 @@ html, body{
 }
 
 .navbar-default{
-   background-color: transparent;
+   background: transparent;
    border: none;
 }
 
@@ -119,7 +164,6 @@ h3 {
 }
 
 .content-element{
-   padding:50px 0 50px 0;
    margin: 50px 0 50px 0;
 }
 
@@ -128,19 +172,74 @@ h3 {
 #about_start{
    padding: 100px 0 0 0;
    background-width: 100%;
+   text-align: center;
 }
 
-#about_content {
+#about_content{
+   max-width: 525px;
+   display: inline-block;
+}
+
+.editor{
+   margin: 33px 0 34px 0;
+   background-color: #2A2F34;
+   border-radius: 5px;
+   text-align: left;
+}
+
+.editor .editor_toolbar{
+   padding: 6px 15px;
+}
+
+.button{
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   margin-right: 2px;
+   padding:0;
+   border-radius: 100%;
+   text-align: left;
+   transition: background-color 200ms linear;
+}
+
+.button:nth-child(1){
+   background-color: #ED7268;
+}
+
+.button:nth-child(2){
+   background-color: #F9E600;
+}
+
+.button:nth-child(3){
+   background-color: #4BD591;
+}
+
+.editor .editor_content{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 24px 15px 35px 15px;
+   overflow: auto;
+}
+
+.editor_content {
    color: #fff;
    font-family: "Courier New";
+   padding: 0 15px 0 15px;
 }
-/* Table */
+/* Resume */
 #resume{
+   max-width: 890px;
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 table {
    font-family: 'Open Sans';
    color: #fff;
+   width: 100%;
+   text-align: left;
 }
 th {
    font-family:'PT Sans';
@@ -153,8 +252,24 @@ td {
    padding-bottom:18px;
 }
 
+.fa{
+   float: right;
+   padding-right: 10px;
+}
+
+a {
+   color: white;
+}
+a:hover{
+   color: lavender;
+}
+
 /*Projects*/
 #projects{
+   max-width: 890px;
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 

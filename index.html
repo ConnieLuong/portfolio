@@ -2,7 +2,11 @@
 <html>
 <head>
 <title>Connie Luong</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 <link rel="stylesheet" href="css/style.css"/>
 <meta charset="utf-8">
 <meta name="viewport" content="width-device-width, initial-scale=1">
@@ -20,6 +24,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
 <header class="header">
 
 <!--NAVBAR-->
+<div class="animated fadeInDown slower">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
 
@@ -41,12 +46,13 @@ src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
 
   </div>
 </nav>
-
+</div>
 
 <!--Animated Text-->
-<div id="animated-text">
-   <h1 style="z-index:1; position:relative;">Hello World!<br>I'm Connie.</h1>
-   <div class="typed_wrap" style="z-index:1; position:relative">
+<div class="animated fadeIn slower" id="animated-text" style="z-index: 1;
+position:relative">
+   <h1>Hello World!<br>I'm Connie.</h1>
+   <div class="typed_wrap">
       <h3>I do <span id="typed"></span></h3>
    </div>
 </div>
@@ -88,35 +94,50 @@ $('document').ready(function(){
 <div class="content-element" id="about_start">
 <h2>About Me</h2>
 <!--ABOUT-->
+
 <div id="about_content">
-&gt;&gt; Connie.origin<br>
-&quot;San Gabriel Valley, CA&quot;<br>
-<br>
-&gt;&gt; Connie.education<br>
-&quot;University of California San Diego&quot;<br>
-<br>
-&gt;&gt; Connie.major<br>
-&quot;Computer Science&quot;<br>
-<br>
-&gt;&gt; Connie.expectedGraduation<br>
-&quot;June 2020&quot;<br>
-<br>
-&gt;&gt; Connie.freeTime<br>
-[&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
-with dog&quot;, &quot;tea&quot;]<br>
-<br>
-&gt;&gt; Connie.random<br>
-[&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
-flip&quot;, &quot;snooze&quot;]<br>
-<br>
-&gt;&gt; Connie.email<br>
-&quot;luong.connie.s@gmail.com&quot;<br>
+
+<div class="editor">
+   <div class="editor_toolbar">
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+   </div>
+   <div class="editor_content">
+      &gt;&gt; Connie.origin<br>
+      &quot;San Gabriel Valley, CA&quot;<br>
+      <br>
+      &gt;&gt; Connie.education<br>
+      &quot;University of California San Diego&quot;<br>
+      <br>
+      &gt;&gt; Connie.major<br>
+      &quot;Computer Science&quot;<br>
+      <br>
+      &gt;&gt; Connie.expectedGraduation<br>
+      &quot;June 2020&quot;<br>
+      <br>
+      &gt;&gt; Connie.freeTime<br>
+      [&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
+      with dog&quot;, &quot;tea&quot;]<br>
+      <br>
+      &gt;&gt; Connie.random<br>
+      [&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
+      flip&quot;, &quot;snooze&quot;]<br>
+      <br>
+      &gt;&gt; Connie.email<br>
+      &quot;luong.connie.s@gmail.com&quot;<br>
+   </div>
 </div>
+</div>
+
+
 </div>
 <!--RESUME-->
 <div class="content-element" id="resume">
-<h2>Resume</h2>
-<table style="width:80%" align=center>
+<h2>Resume <a href="Resume.pdf" target="_blank"><i class="fa fa-download"
+style="font-size:30px"></i></a></h2>
+
+<table align=center>
 <tr>
    <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left">Education</th>
 <tr>
@@ -176,11 +197,51 @@ flip&quot;, &quot;snooze&quot;]<br>
 
 <div class="content-element" id="projects">
 <h2>Projects</h2>
+
+   <div class="row">
+      <div class="col-sm-4" style="background:white; margin: 15px;">
+      <div class="container">
+         <img src="./img/ripple-cover-img.png" class="image" alt="ripple
+         app cover image" style="width:100%">
+         <div class="middle">
+            <div class="text">Read More</div>
+         </div>
+      </div>
+         <div style="padding: 20px;">
+            <h4>Ripple: More Than Just A Bucket List</h4>
+            <p>This is a description that I don't know 
+            what i should say, i am a little bit unconfortable right now. Maybe 
+            I should go get some ice cream, but i don't think my stomach will 
+            appreciate that afterwards.Yeah this is a bit unfortunate.</p>
+         </div>
+      </div>
+
+      <div class="col-sm-4" style="background:white; margin: 15px;">
+      <div class="container">
+         <img src="./img/seefood-cover-img.png" alt="seefood app cover image"
+         class="image" style="width:100%">
+         <div class="middle">
+            <div class="text">Read More</div>
+         </div>
+      </div>
+         <div style="padding: 20px;">
+            <h4>Seefood: Tinder. But For Your Food.</h4>
+            <p>This is a description that I don't know 
+            what i should say, i am a little bit unconfortable right now. Maybe 
+            I should go get some ice cream, but i don't think my stomach will 
+            appreciate that afterwards.Yeah this is a bit unfortunate.</p>
+         </div>
+      </div>
+   </div>
+
 </div>
 
 <footer>
 <span>&copy; 2018 Connie Luong</span>
-<span style="float:right;"><a href=#>Email</a> / <a href=#>LinkedIn</a> / <a href=#>Github</a></span>
+<span style="float:right;"><a href="mailto:luong.connie.s@gmail.com">Email</a> /
+<a href="https://www.linkedin.com/in/connie-luong-5968b26b" target="_blank">
+LinkedIn</a> / <a href="https://github.com/ConnieLuong" target="_blank">Github
+</a></span>
 </footer>
 </div>
 
