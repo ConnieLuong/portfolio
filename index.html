@@ -3,11 +3,12 @@
 <head>
    <title>Connie Luong</title>
 
+   <!--Stylesheet-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet"
      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-   <link rel="stylesheet" href="css/style.css"/>
+   <link rel="stylesheet" href="css/index.css"/>
 
    <!--favicon-->
    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -15,6 +16,8 @@
 
    <meta charset="utf-8">
    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+   <!--Scripts-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
@@ -40,8 +43,8 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about_start">About</a></li>
-              <li><a href="#resume">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="resume.pdf" target="_blank">Resume</a></li>
               <li><a href="#projects">Projects</a></li>
             </ul>
           </div>
@@ -56,21 +59,21 @@
          </div>
       </div>
       <script>
-      $('document').ready(function(){
-         var typed = new Typed('#typed',{
-            strings:["Website Development.", "Interaction Design.",
-            "UI Design.", "Front End Web Development."],
-            typeSpeed:30,
-            startDelay: 2000,
-            backSpeed: 50,
-            backDelay: 2000,
-            loop: true,
-            loopCount: Infinity,
-            shuffle: true,
-            fadeOut: true,
-            cursorChar:"_",
+         $('document').ready(function(){
+            var typed = new Typed('#typed',{
+               strings:["Website Development.", "Interaction Design.",
+               "UI Design.", "Front End Web Development."],
+               typeSpeed:30,
+               startDelay: 2000,
+               backSpeed: 50,
+               backDelay: 2000,
+               loop: true,
+               loopCount: Infinity,
+               shuffle: true,
+               fadeOut: true,
+               cursorChar:"_",
+            });
          });
-      });
       </script>
 
       <!--Animated Background Canvas-->
@@ -82,49 +85,59 @@
 
    <!--ABOUT-->
    <div id="about" class="content-element">
-      <h2>About Me</h2>
-      <div id="about_content">
-         <div class="editor">
-            <div class="editor_toolbar">
-               <div class="button"></div>
-               <div class="button"></div>
-               <div class="button"></div>
-            </div>
-            <div class="editor_content">
-               &gt;&gt; Connie.origin<br>
-               &quot;San Gabriel Valley, CA&quot;<br>
-               <br>
-               &gt;&gt; Connie.education<br>
-               &quot;University of California San Diego&quot;<br>
-               <br>
-               &gt;&gt; Connie.major<br>
-               &quot;Computer Science&quot;<br>
-               <br>
-               &gt;&gt; Connie.expectedGraduation<br>
-               &quot;June 2020&quot;<br>
-               <br>
-               &gt;&gt; Connie.freeTime<br>
-               [&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
-               with dog&quot;, &quot;tea&quot;]<br>
-               <br>
-               &gt;&gt; Connie.random<br>
-               [&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
-               flip&quot;, &quot;snooze&quot;]<br>
-               <br>
-               &gt;&gt; Connie.email<br>
-               &quot;luong.connie.s@gmail.com&quot;<br>
+      <div id="about_content" class="row">
+         <h2>Some <span style="color:#bcbcf2"><em>Sparkles</em></span> About Me</h2>
+         <!--Profile picture-->
+         <div class="col-sm-4">
+            <img src="img/temp-profile-pic.png" alt="profile picture"
+            style="width:100%">
+         </div>
+
+         <!--Mini Intro in terminal-->
+         <div class="col-sm-8">
+            <div class="editor">
+               <div class="editor_toolbar">
+                  <div class="button"></div>
+                  <div class="button"></div>
+                  <div class="button"></div>
+               </div>
+               <div class="editor_content">
+                  &gt;&gt; Connie.origin<br>
+                  &quot;San Gabriel Valley, CA&quot;<br>
+                  <br>
+                  &gt;&gt; Connie.education<br>
+                  &quot;University of California San Diego&quot;<br>
+                  <br>
+                  &gt;&gt; Connie.major<br>
+                  &quot;Computer Science&quot;<br>
+                  <br>
+                  &gt;&gt; Connie.expectedGraduation<br>
+                  &quot;June 2020&quot;<br>
+                  <br>
+                  &gt;&gt; Connie.freeTime<br>
+                  [&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
+                  with dog&quot;, &quot;tea&quot;]<br>
+                  <br>
+                  &gt;&gt; Connie.random<br>
+                  [&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
+                  flip&quot;, &quot;snooze&quot;]<br>
+                  <br>
+                  &gt;&gt; Connie.email<br>
+                  &quot;luong.connie.s@gmail.com&quot;<br>
+               </div>
             </div>
          </div>
       </div>
+
    </div>
 
    <!--PROJECTS-->
    <div id="projects" class="content-element">
-   <h2>Projects</h2>
+   <h2>Side Projects</h2>
       <!--Row 1-->
       <div class="row">
          <!--Ripple-->
-         <div class="col-sm-4" style="background:white; margin: 15px;">
+         <div class="col-sm-4">
             <div class="container">
                <img src="./img/ripple-cover-img.png" class="image" alt="ripple
                app cover image" style="width:100%">
@@ -134,7 +147,7 @@
             </div>
          </div>
          <!--Seefood-->
-         <div class="col-sm-4" style="background:white; margin: 15px;">
+         <div class="col-sm-4">
             <div class="container">
                <img src="./img/seefood-cover-img.png" alt="seefood app cover image"
                class="image" style="width:100%">
@@ -143,6 +156,18 @@
                </div>
             </div>
          </div>
+
+         <!--Seefood-->
+         <div class="col-sm-4">
+            <div class="container">
+               <img src="./img/seefood-cover-img.png" alt="seefood app cover image"
+               class="image" style="width:100%">
+               <div class="middle">
+                  <div class="text">Seefood: Tinder. But For Your Food.</div>
+               </div>
+            </div>
+         </div>
+
       </div>
    </div>
 <!--Main Content END-->
