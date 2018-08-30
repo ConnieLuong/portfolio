@@ -1,0 +1,49 @@
+<!--RESUME-->
+<div class="content-element" id="resume">
+<h2>Resume <a href="Resume.pdf" target="_blank"><i class="fa fa-download"
+style="font-size:30px"></i></a></h2>
+
+<table align=center>
+<tr>
+   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left">Education</th>
+<tr>
+<tr>
+   <td><span class="resume_topics">University Of California San Diego</span>
+   <br>June 2020
+   <br>B.S. Computer Science
+   <br>Provost's Honors
+   <br>GPA 3.713
+   </td>
+</tr>
+<tr>
+   <td><span class="resume_topics">Relevant Coursework</span>
+      <ul>
+         <li>Java Programming</li>
+         <li>Data Structures</li>
+         <li>Terminal, Shell Scriptping</li>
+         <li>Discrete Math</li>
+         <li>Web and Multimedia Design</li>
+         <li>Software Engineering</li>
+         <li>Interaction Design</li>
+      </ul>
+   </td>
+</tr>
+<tr>
+   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left;">Skills</th>
+</tr>
+<tr>
+   <td><span class="resume_topics">Recent</span>
+      <ul>
+         <li>HTML/CSS</li>
+         <li>Javascript</li>
+         <li>C</li>
+      <ul>
+   <td>
+<tr>
+<tr>
+   <td><span class="resume_topics">Less Recent</span>
+      <ul>
+         <li>Java</li>
+         <li>Python</li>
+         <li>Shell Scripting</li>
+      </ul>
