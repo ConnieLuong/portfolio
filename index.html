@@ -1,256 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Connie Luong</title>
+   <title>Connie Luong</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-<link rel="stylesheet" href="css/style.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+   <link rel="stylesheet" href="css/style.css"/>
 
-<!--favicon-->
-<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+   <!--favicon-->
+   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
 
-<meta charset="utf-8">
-<meta name="viewport" content="width-device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-<script src="js/myjs.js"></script>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width-device-width, initial-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+   <script src="js/myjs.js"></script>
 </head>
 
 <body>
-<!--Banner and Navbar-->
-<header class="header">
+   <!--Banner and Navbar-->
+   <header class="header">
 
-<!--NAVBAR-->
-<!--<div class="animated fadeInDown slower">-->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+      <!--NAVBAR-->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about_start">About</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
+      <!--Animated Text-->
+      <div id="animated-text" class="animated fadeIn slower" style="z-index:1;position:relative">
+         <h1>Hello World!<br>I'm Connie.</h1>
+         <div class="typed_wrap">
+            <h3>I do <span id="typed"></span></h3>
+         </div>
+      </div>
+      <script>
+      $('document').ready(function(){
+         var typed = new Typed('#typed',{
+            strings:["Website Development.", "Interaction Design.",
+            "UI Design.", "Front End Web Development."],
+            typeSpeed:30,
+            startDelay: 2000,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true,
+            loopCount: Infinity,
+            shuffle: true,
+            fadeOut: true,
+            cursorChar:"_",
+         });
+      });
+      </script>
 
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about_start">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-<!--</div>-->
-
-<!--Animated Text-->
-<div class="animated fadeIn slower" id="animated-text" style="z-index: 1;
-position:relative">
-   <h1>Hello World!<br>I'm Connie.</h1>
-   <div class="typed_wrap">
-      <h3>I do <span id="typed"></span></h3>
-   </div>
-</div>
-
-
-<script>
-$('document').ready(function(){
-   var typed = new Typed('#typed',{
-      strings:["Website Development.", "Interaction Design.",
-      "UI Design.", "Front End Web Development."],
-      typeSpeed:30,
-      startDelay: 2000,
-      backSpeed: 50,
-      backDelay: 2000,
-      loop: true,
-      loopCount: Infinity,
-      shuffle: true,
-      fadeOut: true,
-      cursorChar:"_",
-   });
-});
-</script>
-
-
-<!--Animated Background Canvas-->
-<canvas class="header__background" style="width:100%; height:100%"></canvas>
-
-<!-- scroll animation icon
-<div class="scroll-wrapper">
-<span class="mouse"></span>
-<p id="scroll-text">Scroll<p>
-</div>-->
-
-</header>
+      <!--Animated Background Canvas-->
+      <canvas class="header__background" style="width:100%; height:100%"></canvas>
+   </header>
 
 
 <!--Main Content-->
-<div class="content-wrapper" style="z-index:4; position: relative;">
-<div class="content-element" id="about_start">
-<h2>About Me</h2>
-<!--ABOUT-->
 
-<div id="about_content">
-
-<div class="editor">
-   <div class="editor_toolbar">
-      <div class="button"></div>
-      <div class="button"></div>
-      <div class="button"></div>
-   </div>
-   <div class="editor_content">
-      &gt;&gt; Connie.origin<br>
-      &quot;San Gabriel Valley, CA&quot;<br>
-      <br>
-      &gt;&gt; Connie.education<br>
-      &quot;University of California San Diego&quot;<br>
-      <br>
-      &gt;&gt; Connie.major<br>
-      &quot;Computer Science&quot;<br>
-      <br>
-      &gt;&gt; Connie.expectedGraduation<br>
-      &quot;June 2020&quot;<br>
-      <br>
-      &gt;&gt; Connie.freeTime<br>
-      [&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
-      with dog&quot;, &quot;tea&quot;]<br>
-      <br>
-      &gt;&gt; Connie.random<br>
-      [&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
-      flip&quot;, &quot;snooze&quot;]<br>
-      <br>
-      &gt;&gt; Connie.email<br>
-      &quot;luong.connie.s@gmail.com&quot;<br>
-   </div>
-</div>
-</div>
-
-
-</div>
-<!--RESUME-->
-<div class="content-element" id="resume">
-<h2>Resume <a href="Resume.pdf" target="_blank"><i class="fa fa-download"
-style="font-size:30px"></i></a></h2>
-
-<table align=center>
-<tr>
-   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left">Education</th>
-<tr>
-<tr>
-   <td><span class="resume_topics">University Of California San Diego</span>
-   <br>June 2020
-   <br>B.S. Computer Science
-   <br>Provost's Honors
-   <br>GPA 3.713
-   </td>
-</tr>
-<tr>
-   <td><span class="resume_topics">Relevant Coursework</span>
-      <ul>
-         <li>Java Programming</li>
-         <li>Data Structures</li>
-         <li>Terminal, Shell Scriptping</li>
-         <li>Discrete Math</li>
-         <li>Web and Multimedia Design</li>
-         <li>Software Engineering</li>
-         <li>Interaction Design</li>
-      </ul>
-   </td>
-</tr>
-<tr>
-   <th style="padding-bottom:10px; border-bottom:2px solid #fff; text-align:left;">Skills</th>
-</tr>
-<tr>
-   <td><span class="resume_topics">Recent</span>
-      <ul>
-         <li>HTML/CSS</li>
-         <li>Javascript</li>
-         <li>C</li>
-      <ul>
-   <td>
-<tr>
-<tr>
-   <td><span class="resume_topics">Less Recent</span>
-      <ul>
-         <li>Java</li>
-         <li>Python</li>
-         <li>Shell Scripting</li>
-      </ul>
-   </td>
-</tr>
-<tr>
-   <td><span class="resume_topics">Languages</span>
-      <ul>
-         <li>English</li>
-         <li>Cantonese</li>
-         <li>Mandarin Chinese</li>
-      </ul>
-   </td>
-</tr>
-</table>
-</div>
-
-<div class="content-element" id="projects">
-<h2>Projects</h2>
-
-   <div class="row">
-      <div class="col-sm-4" style="background:white; margin: 15px;">
-      <div class="container">
-         <img src="./img/ripple-cover-img.png" class="image" alt="ripple
-         app cover image" style="width:100%">
-         <div class="middle">
-            <div class="text">Read More</div>
-         </div>
-      </div>
-         <div style="padding: 20px;">
-            <h4>Ripple: More Than Just A Bucket List</h4>
-            <p>This is a description that I don't know 
-            what i should say, i am a little bit unconfortable right now. Maybe 
-            I should go get some ice cream, but i don't think my stomach will 
-            appreciate that afterwards.Yeah this is a bit unfortunate.</p>
-         </div>
-      </div>
-
-      <div class="col-sm-4" style="background:white; margin: 15px;">
-      <div class="container">
-         <img src="./img/seefood-cover-img.png" alt="seefood app cover image"
-         class="image" style="width:100%">
-         <div class="middle">
-            <div class="text">Read More</div>
-         </div>
-      </div>
-         <div style="padding: 20px;">
-            <h4>Seefood: Tinder. But For Your Food.</h4>
-            <p>This is a description that I don't know 
-            what i should say, i am a little bit unconfortable right now. Maybe 
-            I should go get some ice cream, but i don't think my stomach will 
-            appreciate that afterwards.Yeah this is a bit unfortunate.</p>
+   <!--ABOUT-->
+   <div id="about" class="content-element">
+      <h2>About Me</h2>
+      <div id="about_content">
+         <div class="editor">
+            <div class="editor_toolbar">
+               <div class="button"></div>
+               <div class="button"></div>
+               <div class="button"></div>
+            </div>
+            <div class="editor_content">
+               &gt;&gt; Connie.origin<br>
+               &quot;San Gabriel Valley, CA&quot;<br>
+               <br>
+               &gt;&gt; Connie.education<br>
+               &quot;University of California San Diego&quot;<br>
+               <br>
+               &gt;&gt; Connie.major<br>
+               &quot;Computer Science&quot;<br>
+               <br>
+               &gt;&gt; Connie.expectedGraduation<br>
+               &quot;June 2020&quot;<br>
+               <br>
+               &gt;&gt; Connie.freeTime<br>
+               [&quot;anime&quot;, &quot;code&quot;, &quot;music&quot;, &quot;play fetch 
+               with dog&quot;, &quot;tea&quot;]<br>
+               <br>
+               &gt;&gt; Connie.random<br>
+               [&quot;are my dumplings ready&quot;, &quot;I'm fabulous&quot;, &quot;hair
+               flip&quot;, &quot;snooze&quot;]<br>
+               <br>
+               &gt;&gt; Connie.email<br>
+               &quot;luong.connie.s@gmail.com&quot;<br>
+            </div>
          </div>
       </div>
    </div>
 
-</div>
+   <!--PROJECTS-->
+   <div id="projects" class="content-element">
+   <h2>Projects</h2>
+      <!--Row 1-->
+      <div class="row">
+         <!--Ripple-->
+         <div class="col-sm-4" style="background:white; margin: 15px;">
+            <div class="container">
+               <img src="./img/ripple-cover-img.png" class="image" alt="ripple
+               app cover image" style="width:100%">
+               <div class="middle">
+                  <div class="text">Ripple: More than a Bucket List</div>
+               </div>
+            </div>
+         </div>
+         <!--Seefood-->
+         <div class="col-sm-4" style="background:white; margin: 15px;">
+            <div class="container">
+               <img src="./img/seefood-cover-img.png" alt="seefood app cover image"
+               class="image" style="width:100%">
+               <div class="middle">
+                  <div class="text">Seefood: Tinder. But For Your Food.</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<!--Main Content END-->
 
+<!--Footer-->
 <footer>
-<span>&copy; 2018 Connie Luong</span>
-<span style="float:right;"><a href="mailto:luong.connie.s@gmail.com">Email</a> /
-<a href="https://www.linkedin.com/in/connie-luong-5968b26b" target="_blank">
-LinkedIn</a> / <a href="https://github.com/ConnieLuong" target="_blank">Github
-</a></span>
+   <span>&copy; 2018 Connie Luong</span>
+   <span style="float:right;"><a href="mailto:luong.connie.s@gmail.com">Email</a> /
+   <a href="https://www.linkedin.com/in/connie-luong-5968b26b" target="_blank">
+   LinkedIn</a> / <a href="https://github.com/ConnieLuong" target="_blank">Github
+   </a></span>
 </footer>
-</div>
 
-<!--Particles Animation-->
+<!--Particles Animation script-->
 <script src="https://npmcdn.com/particlesjs@2.2.2/dist/particles.min.js"></script>
 <script>
       window.onload = function() {
