@@ -143,7 +143,7 @@ h3 {
 }
 
 #about_content{
-   max-width: 90vw;
+   max-width: 70vw;
    display: inline-block;
 }
 
@@ -209,7 +209,7 @@ h3 {
 
 /*Projects*/
 #projects{
-   max-width: 90vw;
+   max-width: 70vw;
    display: block;
    margin-right: auto;
    margin-left: auto;
@@ -254,6 +254,7 @@ h3 {
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+  border-radius: 10px;
 }
 
 .hovereffect:hover img {
@@ -280,12 +281,13 @@ h3 {
 
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family:'Open Sans';
   letter-spacing: 3px;
-  padding: 1em 1em;
+  padding: 2.5em 1em;
   opacity: 0;
+  text-align: center;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
