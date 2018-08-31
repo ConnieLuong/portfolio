@@ -8,6 +8,7 @@
    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/index.css"/>
    <link rel="stylesheet" href="css/about.css"/>
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
    <!--favicon-->
    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -18,6 +19,8 @@
    <!--JavaScript-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 
 
 <head>
@@ -48,6 +51,7 @@
         </div>
       </nav>
       </header>
+      
       <div id="about_page">
          <div id="about_page_content" class="row">
             <!--Profile Picture-->
@@ -57,11 +61,64 @@
             <!--Introduction-->
             <div class="col-sm-7">
                <span style="color: white">
-                  This is some text
+                  <h1>Connie Luong</h1>
+                  <div id="intro">
+                  <p>Hey! I currently attending the University of
+                  California San Diego as a Junior, majoring in Computer
+                  Science. I had my first interaction with coding freshman year
+                  in high school. However our school lacked funding, so coding 
+                  classes typically didn't last beyond a couple of weeks.</p>
+
+                  <p>Around senior year of high school, I started a blog and 
+                  began to tap into a bit of HTML and CSS. Back then, I
+                  wasn't really sure if web development was something I had a
+                  passion in. But, I've dicovered throughout these couple of 
+                  years here at UCSD: This is my passion.</p>
+
+                  <p>Blogging has taught me the importance of interaction and
+                  involvement with not only myself but also the community. With
+                  my skills in web development, I really enjoy being able to 
+                  bring to life ideas and designs that can create a memorable 
+                  and enjoyable experience for both the user and me. So I want
+                  to continue to embark on projects to create memories and
+                  experiences.</p>
+
+                  <p>I'm always open to learn and interact more, so feel free to
+                  shoot me a message anytime! My email is
+                  <a href="mailto:luong.connie.s@gmail.com">
+                  luong.connie.s@gmail.com</a>.</p>
+                  </div>
                </span>
             </div>
          </div>
       </div>
+
+      <!--Particles Animation-->
+      <canvas class="__background" style="width:100%; height:100%"></canvas>
+      <script src="https://npmcdn.com/particlesjs@2.2.2/dist/particles.min.js"></script>
+      <script>
+         window.onload = function() {
+           Particles.init({
+             selector: '.__background',
+             color: '#819bfc',
+             maxParticles: 90,
+             connectParticles: true,
+             responsive: [
+               {
+                 breakpoint: 768,
+                 options: {
+                   maxParticles: 50
+                 }
+               }, {
+                 breakpoint: 375,
+                 options: {
+                   maxParticles: 30
+                 }
+               }
+             ]
+           });
+         };
+      </script>
 </body>
 </html>
 

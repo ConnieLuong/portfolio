@@ -28,6 +28,9 @@
 .navbar-default{
    background: transparent;
    border: none;
+   font-family: 'Open Sans';
+   text-transform: uppercase;
+   letter-spacing: 3px;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -89,7 +92,8 @@ body:before{
 
 /* Headings */
 h1{
-   font-family: 'PT Sans';
+   font-family: 'Josefin Sans', sans-serif;
+   text-transform: uppercase;
    color: #ffffff;
    text-align: left;
    font-size: 60px;
@@ -99,7 +103,7 @@ h1{
 }
 
 h2 {
-   font-family: 'Open Sans';
+   font-family: 'Josefin Sans', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    font-size: 20px;
