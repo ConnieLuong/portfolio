@@ -63,28 +63,27 @@
 
 @media (max-width: 767px){
    .navbar-collapse{
-      background: linear-gradient(to bottom, white 30%, rgb(255,255,255,0.8), 
-      rgb(255,255,255,0.7), rgb(255,255,255,0.6));
+      background: linear-gradient(to bottom left, black 50%, transparent);
       text-align:center;
    }
    .navbar-default{
       background: transparent;
    }
    .navbar-default .navbar-nav > li > a{
-      color: MidnightBlue;
+      color: white;
       font-weight: bold;
    }
    .navbar-default .navbar-nav > li > a:hover{
-      color: MidnightBlue;
+      color: white;
       text-decoration: underline;
    }
    .navbar-default .navbar-nav > li > a:focus{
-      color: MidnightBlue;
+      color: white;
       text-decoration: underline;
    }
 
    .navbar-default .navbar-nav > li > a:active{
-      color: MidnightBlue;
+      color: white;
       text-decoration: underline;
    }
 
@@ -95,6 +94,8 @@
    }
    .desktop{
       display: none;
+      margin-right:auto;
+      margin-left:auto;
    }
 }
 
