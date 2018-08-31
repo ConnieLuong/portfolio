@@ -26,7 +26,7 @@
 }
 
 .navbar-default{
-   background: transparent;
+   background: linear-gradient(to bottom, #000000 30%, transparent);
    border: none;
    font-family: 'Open Sans';
    text-transform: uppercase;
@@ -57,18 +57,47 @@
    transition: background-color 500ms linear;
 }
 
+.mobile{
+   display:none;
+}
+
 @media (max-width: 767px){
    .navbar-collapse{
-      background: rgb(255,255,255,0.8);
+      background: linear-gradient(to bottom, white 30%, rgb(255,255,255,0.8), 
+      rgb(255,255,255,0.7), rgb(255,255,255,0.6));
+      text-align:center;
+   }
+   .navbar-default{
+      background: transparent;
    }
    .navbar-default .navbar-nav > li > a{
       color: MidnightBlue;
+      font-weight: bold;
    }
    .navbar-default .navbar-nav > li > a:hover{
       color: MidnightBlue;
       text-decoration: underline;
    }
+   .navbar-default .navbar-nav > li > a:focus{
+      color: MidnightBlue;
+      text-decoration: underline;
+   }
+
+   .navbar-default .navbar-nav > li > a:active{
+      color: MidnightBlue;
+      text-decoration: underline;
+   }
+
+   .mobile{
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   .desktop{
+      display: none;
+   }
 }
+
 
 /* Body */
 html, body{
