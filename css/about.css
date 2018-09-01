@@ -61,3 +61,60 @@ a , a:hover, a:active{
 }
 
 
+
+/* Hobbies Photo Slider */
+.cd-svg-clipped-slider .gallery li {
+  /* slider images */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 25%;/* (100% - width)/2 */
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(75%) scale(0.4);
+  transition: opacity .3s, transform .3s ease-in-out;
+}
+
+.cd-svg-clipped-slider .gallery li.selected {
+  /* slide in the center */
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.cd-svg-clipped-slider .gallery li.left {
+  /* slides on the left */
+  transform: translateX(-75%) scale(0.4);
+}
+.cd-svg-clipped-slider .gallery li.left,
+.cd-svg-clipped-slider .gallery li.right {
+  /* .right -> slide visible on the right */
+  z-index: 2;
+  opacity: 1;
+}
+
+.cd-svg-clipped-slider .caption li {
+  /* slide titles */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: opacity .3s, transform .3s ease-in-out;
+}
+.cd-svg-clipped-slider .caption li.selected {
+  /* slide visible in the center */
+  z-index: 2;
+  position: relative;
+  transform: translateX(0);
+  opacity: 1;
+}
+.cd-svg-clipped-slider .caption li.left {
+  /* slide hidden on the left */
+  transform: translateX(-100px);
+}
