@@ -1,3 +1,11 @@
+/*FOOTER*/
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+}
 /*HEADER*/
 .header .header__background {
   position: absolute;
@@ -110,7 +118,7 @@ body{
    font-size: 13px;
    margin: 0;
    background: linear-gradient(to bottom, #000000 30%, #1c1b31, #383662, #5059b1);
-   height:100%;
+   min-height:100%;
    background-repeat: no-repeat;
 }
 
