@@ -1,3 +1,9 @@
+.caption{
+   font-family: 'Open Sans';
+   font-size: 14px;
+   color: white;
+}
+
 ol,ul{
    list-style:none
 }
@@ -8,8 +14,8 @@ svg,image{
 .cd-svg-clipped-slider{
     position:relative;
     width:100%;
-    max-width:1440px;
-    margin:4em auto
+    max-width:70vw;
+    margin:0;
 }
 .cd-svg-clipped-slider .gallery-wrapper,.cd-svg-clipped-slider .gallery,.cd-svg-clipped-slider .caption{
     position:relative
@@ -91,7 +97,7 @@ svg,image{
 }
 @media only screen and (min-width:768px){
     .cd-svg-clipped-slider .caption li{
-        font-size:2.4rem
+        font-size:14px;
     }
 }
 @media only screen and (min-width:1170px){
