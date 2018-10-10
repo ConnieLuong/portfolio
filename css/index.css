@@ -1,11 +1,3 @@
-/*FOOTER*/
-#footer {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: -3em;
-}
 /*HEADER*/
 .header .header__background {
   position: absolute;
@@ -33,6 +25,7 @@
    padding-left: 5%;
 }
 
+/*
 .navbar-default{
    background: linear-gradient(to bottom, #000000 30%, transparent);
    border: none;
@@ -106,7 +99,7 @@
       margin-left:auto;
    }
 }
-
+*/
 
 /* Body */
 html, body{
@@ -150,7 +143,6 @@ h1{
    vertical-align: middle;
    padding-bottom: 0px;
 }
-
 h2 {
    font-family: 'Josefin Sans', sans-serif;
    text-transform: uppercase;
@@ -160,7 +152,6 @@ h2 {
    text-align: left;
    padding: 0 0 0 18px;
 }
-
 h3 {
    font-family: 'Open Sans';
    font-style: italic;
@@ -169,7 +160,6 @@ h3 {
    font-weight: normal;
    text-align: left;
 }
-
 .content-element{
    margin: 150px 0 50px 0;
 }
@@ -346,6 +336,13 @@ footer{
    color: #fff;
    padding: 30px;
    padding-top: 50px;
+}
+#footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
 }
 footer a{
    color: #fff;

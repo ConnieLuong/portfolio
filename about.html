@@ -6,10 +6,15 @@
    <!--Stylesheets-->
    <link rel="stylesheet" 
    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
    <link rel="stylesheet" href="css/index.css"/>
    <link rel="stylesheet" href="css/about.css"/>
-   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
    <link rel="stylesheet" href="css/diamond.css"/>
+   <link rel="stylesheet" href="css/navbar.css"/>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+ 
 
    <!--favicon-->
    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -19,117 +24,110 @@
 
    <!--JavaScript-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script
    src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-
+   <script src="js/navbar.js"></script>
 
 <head>
-<body>   
-      <header>
-      <!--NAVBAR-->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" 
-            data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-left">
-               <li><a href="index.html">
-                  <img src="img/portfolio-logo.png" style="width:4vw; margin:0"
-                  class="desktop">
-                  <img src="img/portfolio-logo.png" style="width:6vw; margin:0"
-                  class="mobile"><div class="mobile">&nbsp&nbsp&nbsp&nbspConnie Luong</div>
-               </a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" style="margin:15px 0 20px 0">
-              <li><a href="about.html">About</a></li>
-              <li><a href="Resume-2018.pdf" target="_blank">Resume</a></li>
-              <li><a href="index.html#projects">Projects</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </nav>
-      </header>
-      
-      <div id="about_page">
-         <div id="about_page_content" class="row">
-            <!--Profile Picture-->
-            <div class="col-sm-5">
-               <img src="img/temp-profile-pic.png" style="width:100%">
-            </div>
-            <!--Introduction-->
-            <div class="col-sm-7">
-               <span style="color: white">
-                  <h1>Connie Luong</h1>
-                  <div id="intro">
-                  <p>Hey! I currently attend the University of
-                  California San Diego as a Junior, majoring in Computer
-                  Science. I had my first interaction with coding freshman year
-                  in high school. However our school lacked funding, so coding 
-                  classes typically didn't last beyond a couple of weeks.</p>
-
-                  <p>Around senior year of high school, I started a blog and 
-                  began to tap into a bit of HTML and CSS. Back then, I
-                  wasn't really sure if web development was something I had a
-                  passion in. But, I've dicovered throughout these couple of 
-                  years here at UCSD: This is my passion.</p>
-
-                  <p>Blogging has taught me the importance of interaction and
-                  involvement with not only myself but also the community. With
-                  my skills in web development, I really enjoy being able to 
-                  bring to life ideas and designs that can create a memorable 
-                  and enjoyable experience for both the user and me. So I want
-                  to continue to embark on projects and continue to create
-                  greater memories and experiences.</p>
-
-                  <p>I'm always open to learn and interact more, so feel free to
-                  shoot me a message anytime! My email is
-                  <a href="mailto:luong.connie.s@gmail.com">
-                  luong.connie.s@gmail.com</a>.</p>
-                  </div>
-               </span>
-            </div>
-         </div>
+  
+<!--Navigation-->
+<!--<section class="navigation">-->
+  <!--<div class="nav-container">-->
+    <nav>
+      <!-- mobile toggle-->
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!" onclick="cross('nav-toggle-2')"><span id="nav-toggle-2"></span></a>
       </div>
 
-      <!--Particles Animation-->
-      <canvas class="__background" style="width:100%; height:100%"></canvas>
-      <script src="https://npmcdn.com/particlesjs@2.2.2/dist/particles.min.js"></script>
-      <script>
-         window.onload = function() {
-           Particles.init({
-             selector: '.__background',
-             color: '#819bfc',
-             maxParticles: 90,
-             connectParticles: true,
-             responsive: [
-               {
-                 breakpoint: 768,
-                 options: {
-                   maxParticles: 50
-                 }
-               }, {
-                 breakpoint: 375,
-                 options: {
-                   maxParticles: 30
-                 }
-               }
-             ]
-           });
-         };
-      </script>
+      <!-- Main nav menu-->
+      <ul class="nav-list">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Resume-2018.pdf">Resume</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </nav>
+ <!-- </div>-->
+<!--</section>-->
+
+<body>   
+  <header>
+  </header>
+      
+  <div id="about_page">
+    <div id="about_page_content" class="row">
+      <!--Profile Picture-->
+      <div class="col-sm-5">
+          <img src="img/temp-profile-pic.png" style="width:100%">
+      </div>
+      <!--Introduction-->
+      <div class="col-sm-7">
+        <span style="color: white">
+          <h1>Connie Luong</h1>
+          <div id="intro">
+            <p>Hey! I currently attend the University of
+            California San Diego as a Junior, majoring in Computer
+            Science. I had my first interaction with coding freshman year
+            in high school. However our school lacked funding, so coding 
+            classes typically didn't last beyond a couple of weeks.</p>
+
+            <p>Around senior year of high school, I started a blog and 
+            began to tap into a bit of HTML and CSS. Back then, I
+            wasn't really sure if web development was something I had a
+            passion in. But, I've dicovered throughout these couple of 
+            years here at UCSD: This is my passion.</p>
+
+            <p>Blogging has taught me the importance of interaction and
+            involvement with not only myself but also the community. With
+            my skills in web development, I really enjoy being able to 
+            bring to life ideas and designs that can create a memorable 
+            and enjoyable experience for both the user and me. So I want
+            to continue to embark on projects and continue to create
+            greater memories and experiences.</p>
+
+            <p>I'm always open to learn and interact more, so feel free to
+            shoot me a message anytime! My email is
+            <a href="mailto:luong.connie.s@gmail.com">
+            luong.connie.s@gmail.com</a>.</p>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--Particles Animation-->
+  <canvas class="__background" style="width:100%; height:100%"></canvas>
+  <script src="https://npmcdn.com/particlesjs@2.2.2/dist/particles.min.js"></script>
+  <script>
+    window.onload = function() {
+      Particles.init({
+        selector: '.__background',
+        color: '#819bfc',
+        maxParticles: 90,
+        connectParticles: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            options: {
+              maxParticles: 50
+            }
+          }, {
+            breakpoint: 375,
+            options: {
+              maxParticles: 30
+            }
+          }
+        ]
+      });
+    };
+  </script>
 
 
    <!--Hobbies Photo Slider-->
-   <div id="my-hobbies">My Hobbies</div>
-   <div id="photo-slider">
+  <div id="my-hobbies">My Hobbies</div>
+  <div id="photo-slider">
    <div class="cd-svg-clipped-slider" data-selected="M780,0H20C8.954,0,0,8.954,0,20v760c0,11.046,8.954,20,20,20h760c11.046,0,20-8.954,20-20V20
          C800,8.954,791.046,0,780,0z" data-lateral="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851
          c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648
@@ -246,16 +244,16 @@
           	ga('set', 'anonymizeIp', true);
           	ga('send', 'pageview');
       </script>
-      </div>
+  </div>
 
-      <!--Footer-->
-      <footer>
-         <span>&copy; 2018 Connie Luong</span>
-         <span style="float:right;"><a href="mailto:luong.connie.s@gmail.com">Email</a> /
-         <a href="https://www.linkedin.com/in/connie-luong-5968b26b" target="_blank">
-         LinkedIn</a> / <a href="https://github.com/ConnieLuong" target="_blank">Github
-         </a></span>
-      </footer>
+  <!--Footer-->
+  <footer>
+    <span>&copy; 2018 Connie Luong</span>
+    <span style="float:right;"><a href="mailto:luong.connie.s@gmail.com">Email</a> /
+    <a href="https://www.linkedin.com/in/connie-luong-5968b26b" target="_blank">
+    LinkedIn</a> / <a href="https://github.com/ConnieLuong" target="_blank">Github
+    </a></span>
+  </footer>
 
 
 </body>
